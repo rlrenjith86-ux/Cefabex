@@ -220,26 +220,24 @@ a {
 }
 
 .brand-logo {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
 
     display: grid;
     place-items: center;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #008cff,
-            #004eff
-        );
+    overflow: hidden;
 
-    font-size: 21px;
-    font-weight: 900;
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.45);
+}
 
-    box-shadow:
-        0 0 20px rgba(0, 140, 255, 0.55);
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .brand-text,
@@ -2060,11 +2058,12 @@ footer {
 }
 
 .brand img {
-    width: 58px;
-    height: 58px;
+    width: 38px;
+    height: 38px;
     object-fit: contain;
     display: block;
     transition: 0.3s ease;
+}
 }
 
 .brand img:hover {
