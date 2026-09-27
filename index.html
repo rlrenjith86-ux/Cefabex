@@ -4,773 +4,507 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CEFABEX Innovations | Technology • Innovation • Impact</title>
-
-    <meta
-        name="description"
-        content="CEFABEX Innovations — Technology, Innovation and Impact."
-    >
+    <title>CEFABEX Innovations</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= PRELOADER ================= -->
+    <!-- BACKGROUND ANIMATION -->
+    <canvas id="particleCanvas"></canvas>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+    <div class="ambient ambient-3"></div>
 
-    <div id="preloader">
-        <div class="loader-logo">C</div>
-        <div class="loader-line">
-            <span></span>
+    <div class="tech-grid"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>CEFABEX</span>
+            <small>INNOVATIONS</small>
         </div>
-        <p>INITIALIZING CEFABEX...</p>
-    </div>
 
-
-    <!-- ================= BACKGROUND ================= -->
-
-    <div class="background-grid"></div>
-    <div class="background-glow glow-1"></div>
-    <div class="background-glow glow-2"></div>
-
-
-    <!-- ================= NAVBAR ================= -->
-
-    <header class="navbar" id="navbar">
-
-        <a href="#home" class="logo">
-
-            <div class="logo-symbol">
-                C
-            </div>
-
-            <div class="logo-text">
-                <strong>CEFABEX</strong>
-                <span>INNOVATIONS</span>
-            </div>
-
-        </a>
-
-
-        <nav class="desktop-nav">
-
+        <nav id="navMenu">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#featured">Featured</a>
+            <a href="#resumes">Resumes</a>
+            <a href="#order">Order Now</a>
             <a href="#contact">Contact</a>
-
         </nav>
 
-
-        <a href="#contact" class="nav-cta">
-            Start a Project
-            <span>↗</span>
-        </a>
-
-
-        <button class="menu-button" id="menuButton">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="menu-btn" id="menuBtn">
+            ☰
         </button>
 
     </header>
 
 
-    <!-- ================= MOBILE MENU ================= -->
+    <!-- HERO -->
+    <section class="hero" id="home">
 
-    <div class="mobile-menu" id="mobileMenu">
+        <div class="hero-content reveal">
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#featured">Featured</a>
-        <a href="#contact">Contact</a>
-
-    </div>
-
-
-    <!-- ================= HERO ================= -->
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <div class="eyebrow">
-                    <span class="status-dot"></span>
-                    TECHNOLOGY • INNOVATION • IMPACT
-                </div>
-
-
-                <h1>
-                    BUILDING
-                    <br>
-                    <span>WHAT'S NEXT.</span>
-                </h1>
-
-
-                <p class="hero-description">
-                    CEFABEX Innovations transforms ideas into digital
-                    experiences, engineering solutions and technology-driven
-                    possibilities.
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a href="#services" class="primary-button">
-                        Explore Services
-                        <span>→</span>
-                    </a>
-
-                    <a href="#projects" class="secondary-button">
-                        View Projects
-                    </a>
-
-                </div>
-
+            <div class="status">
+                <span></span>
+                INNOVATING THE FUTURE
             </div>
 
-
-            <!-- FUTURISTIC CORE -->
-
-            <div class="hero-visual">
-
-                <div class="orbit orbit-1"></div>
-                <div class="orbit orbit-2"></div>
-                <div class="orbit orbit-3"></div>
-
-                <div class="tech-core">
-
-                    <div class="core-glow"></div>
-
-                    <span>C</span>
-
-                </div>
-
-
-                <div class="floating-node node-1"></div>
-                <div class="floating-node node-2"></div>
-                <div class="floating-node node-3"></div>
-
-
-                <div class="data-card data-card-1">
-                    <small>SYSTEM</small>
-                    <strong>ONLINE</strong>
-                </div>
-
-                <div class="data-card data-card-2">
-                    <small>INNOVATION</small>
-                    <strong>ACTIVE</strong>
-                </div>
-
-            </div>
-
-
-            <div class="scroll-indicator">
-                <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="section about-section" id="about">
-
-            <div class="section-number">
-                01 / ABOUT
-            </div>
-
-
-            <div class="about-grid">
-
-                <div>
-
-                    <h2>
-                        IDEAS BECOME
-                        <span>INNOVATION.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="about-text">
-
-                    <p>
-                        CEFABEX Innovations is built around one simple idea —
-                        technology should solve real problems.
-                    </p>
-
-                    <p>
-                        We combine digital development, engineering,
-                        creative design and business-oriented solutions
-                        to transform concepts into practical outcomes.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-
-                    <strong>08</strong>
-                    <span>Core Services</span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <strong>∞</strong>
-                    <span>Ideas to Explore</span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <strong>01</strong>
-                    <span>Innovation Mindset</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SERVICES ================= -->
-
-        <section class="section services-section" id="services">
-
-            <div class="section-heading">
-
-                <div>
-
-                    <div class="section-number">
-                        02 / SERVICES
-                    </div>
-
-                    <h2>
-                        WHAT WE
-                        <span>BUILD.</span>
-                    </h2>
-
-                </div>
-
-
-                <p>
-                    Explore the eight core services offered by
-                    CEFABEX Innovations.
-                </p>
-
-            </div>
-
-
-            <div class="services-grid">
-
-
-                <!-- SERVICE 01 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>01</span>
-                        <div class="service-icon">⌘</div>
-                    </div>
-
-                    <h3>
-                        Website
-                        <br>
-                        Development
-                    </h3>
-
-                    <p>
-                        Modern, responsive and high-performance websites
-                        designed around your requirements.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 02 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>02</span>
-                        <div class="service-icon">◈</div>
-                    </div>
-
-                    <h3>
-                        Website
-                        <br>
-                        Customisation
-                    </h3>
-
-                    <p>
-                        Upgrade existing websites with custom features,
-                        modern interfaces and improved functionality.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 03 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>03</span>
-                        <div class="service-icon">▣</div>
-                    </div>
-
-                    <h3>
-                        App
-                        <br>
-                        Development
-                    </h3>
-
-                    <p>
-                        Practical web and mobile applications focused
-                        on usability and real-world requirements.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 04 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>04</span>
-                        <div class="service-icon">⚙</div>
-                    </div>
-
-                    <h3>
-                        CAD Designing
-                        <br>
-                        & Automation
-                    </h3>
-
-                    <p>
-                        Engineering design, CAD concepts, automation
-                        and prototype-oriented solutions.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 05 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>05</span>
-                        <div class="service-icon">▤</div>
-                    </div>
-
-                    <h3>
-                        ATS Resumes
-                        <br>
-                        & IEEE Format
-                    </h3>
-
-                    <p>
-                        ATS-friendly resumes, IEEE-format papers,
-                        technical reports and documentation.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 06 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>06</span>
-                        <div class="service-icon">✦</div>
-                    </div>
-
-                    <h3>
-                        Social Media
-                        <br>
-                        & Logo Designing
-                    </h3>
-
-                    <p>
-                        Digital branding, logo design, social media
-                        content and visual communication.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 07 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>07</span>
-                        <div class="service-icon">⌬</div>
-                    </div>
-
-                    <h3>
-                        College
-                        <br>
-                        Projects
-                    </h3>
-
-                    <p>
-                        Engineering projects across embedded systems,
-                        IoT, software, automation and AI.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICE 08 -->
-
-                <article class="service-card">
-
-                    <div class="service-top">
-                        <span>08</span>
-                        <div class="service-icon">◫</div>
-                    </div>
-
-                    <h3>
-                        Business Research
-                        <br>
-                        & Development
-                    </h3>
-
-                    <p>
-                        Research, analysis and business development
-                        support tailored to practical requirements.
-                    </p>
-
-                    <div class="service-arrow">
-                        →
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="section projects-section" id="projects">
-
-            <div class="section-number">
-                03 / PROJECTS
-            </div>
-
-            <h2>
-                OUR
-                <span>PROJECTS.</span>
-            </h2>
-
-            <p class="section-description">
-                A showcase of projects developed by CEFABEX Innovations.
+            <h1>
+                Building the
+                <span>Digital Future</span>
+            </h1>
+
+            <p>
+                CEFABEX Innovations creates modern digital solutions,
+                intelligent applications, websites, automation systems
+                and technology-driven experiences.
             </p>
 
+            <div class="hero-buttons">
 
-            <!-- PROJECTS WILL BE INSERTED HERE -->
+                <a href="#projects" class="btn primary">
+                    Explore Projects
+                </a>
 
-            <div class="projects-placeholder">
-
-                <div class="placeholder-symbol">
-                    +
-                </div>
-
-                <div>
-
-                    <span>PROJECT DATABASE</span>
-
-                    <h3>
-                        PROJECTS COMING SOON
-                    </h3>
-
-                    <p>
-                        Our actual project portfolio will be added here
-                        with project images, descriptions, technologies
-                        and links.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FEATURED ================= -->
-
-        <section class="section featured-section" id="featured">
-
-            <div class="featured-container">
-
-                <div class="featured-label">
-                    <span class="pulse"></span>
-                    FEATURED INNOVATION
-                </div>
-
-
-                <div class="featured-grid">
-
-                    <div class="featured-content">
-
-                        <div class="section-number">
-                            04 / FEATURED PROJECT
-                        </div>
-
-
-                        <div class="finalist-badge">
-                            STATE LEVEL FINALIST
-                        </div>
-
-
-                        <h2>
-                            TN
-                            <br>
-                            HACKATHON
-                            <br>
-                            <span>PROJECT.</span>
-                        </h2>
-
-
-                        <p>
-                            Our state-level hackathon finalist project
-                            will be showcased here with its innovation,
-                            technology, prototype and impact.
-                        </p>
-
-
-                        <button class="outline-button">
-                            Explore Project
-                            <span>↗</span>
-                        </button>
-
-                    </div>
-
-
-                    <div class="featured-visual">
-
-                        <div class="featured-circle">
-
-                            <div class="circle-inner">
-                                CEFABEX
-                            </div>
-
-                        </div>
-
-
-                        <div class="hud-text hud-1">
-                            INNOVATION
-                        </div>
-
-                        <div class="hud-text hud-2">
-                            TECHNOLOGY
-                        </div>
-
-                        <div class="hud-text hud-3">
-                            IMPACT
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= WHO WE BUILD FOR ================= -->
-
-        <section class="section audience-section">
-
-            <div class="section-number">
-                05 / WHO WE BUILD FOR
-            </div>
-
-            <h2>
-                TECHNOLOGY FOR
-                <span>REAL NEEDS.</span>
-            </h2>
-
-
-            <div class="audience-grid">
-
-                <div class="audience-card">
-
-                    <span>01</span>
-
-                    <h3>
-                        Students
-                    </h3>
-
-                    <p>
-                        Projects, resumes, technical documentation
-                        and technology solutions.
-                    </p>
-
-                </div>
-
-
-                <div class="audience-card">
-
-                    <span>02</span>
-
-                    <h3>
-                        Startups
-                    </h3>
-
-                    <p>
-                        Websites, applications, branding and
-                        digital products.
-                    </p>
-
-                </div>
-
-
-                <div class="audience-card">
-
-                    <span>03</span>
-
-                    <h3>
-                        Businesses
-                    </h3>
-
-                    <p>
-                        Digital solutions, research, automation
-                        and business development.
-                    </p>
-
-                </div>
-
-
-                <div class="audience-card">
-
-                    <span>04</span>
-
-                    <h3>
-                        Innovators
-                    </h3>
-
-                    <p>
-                        Prototype development and
-                        technology implementation.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="section contact-section" id="contact">
-
-            <div class="contact-container">
-
-                <div class="section-number">
-                    06 / LET'S CONNECT
-                </div>
-
-
-                <h2>
-                    HAVE AN
-                    <br>
-                    <span>IDEA?</span>
-                </h2>
-
-
-                <p>
-                    Let's transform your concept into something
-                    useful, practical and impactful.
-                </p>
-
-
-                <a href="mailto:YOUR_EMAIL@example.com"
-                   class="primary-button">
-
-                    Start a Conversation
-                    <span>→</span>
-
+                <a href="#order" class="btn secondary">
+                    Order Now
                 </a>
 
             </div>
 
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-brand">
-
-            <strong>CEFABEX</strong>
-            <span>INNOVATIONS</span>
-
         </div>
 
 
-        <p>
-            Technology • Innovation • Impact
-        </p>
+        <!-- RIGHT SIDE HERO VISUAL -->
+        <div class="hero-visual reveal">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="core">
+
+                <div class="core-ring"></div>
+
+                <div class="core-center">
+                    <strong>CX</strong>
+                    <small>AI • TECH</small>
+                </div>
+
+            </div>
+
+            <div class="floating-card card-one">
+                <b>AI</b>
+                <span>Innovation</span>
+            </div>
+
+            <div class="floating-card card-two">
+                <b>WEB</b>
+                <span>Digital</span>
+            </div>
+
+            <div class="floating-card card-three">
+                <b>IoT</b>
+                <span>Automation</span>
+            </div>
+
+        </div>
+
+    </section>
 
 
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+        <div class="section-heading reveal">
+            <span>01 / ABOUT</span>
+            <h2>Technology With Purpose.</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+                <p>
+                    CEFABEX Innovations focuses on creating practical,
+                    modern and customer-oriented technology solutions.
+                </p>
+
+                <p>
+                    From websites and applications to automation,
+                    design, academic projects and business solutions,
+                    our goal is to transform ideas into useful digital
+                    experiences.
+                </p>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat reveal">
+                    <strong data-count="4">0</strong>
+                    <span>Projects</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong data-count="8">0</strong>
+                    <span>Services</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong data-count="3">0</strong>
+                    <span>Resume Models</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+
+        <div class="section-heading reveal">
+            <span>02 / SERVICES</span>
+            <h2>What We Build.</h2>
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card reveal">
+                <span>01</span>
+                <h3>Website Development</h3>
+                <p>Modern responsive websites for businesses and individuals.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>02</span>
+                <h3>Website Customisation</h3>
+                <p>Transform existing websites with improved design and functionality.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>03</span>
+                <h3>App Development</h3>
+                <p>Functional mobile and web application solutions.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>04</span>
+                <h3>CAD Designing & Automation</h3>
+                <p>Engineering design, automation concepts and digital solutions.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>05</span>
+                <h3>ATS Resumes & IEEE Format</h3>
+                <p>Professional resumes and academic documentation.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>06</span>
+                <h3>Social Media Marketing & Logo Designing</h3>
+                <p>Digital branding, social media presence and visual identity.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>07</span>
+                <h3>College Projects</h3>
+                <p>Hardware, software, IoT and engineering project solutions.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <span>08</span>
+                <h3>Business Research / Business Development Packages</h3>
+                <p>Research-driven digital and business development support.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+
+        <div class="section-heading reveal">
+            <span>03 / PROJECTS</span>
+            <h2>Ideas. Built. Delivered.</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card reveal"
+                     data-title="Library Portal"
+                     data-description="A modern digital library portal solution.">
+
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        LIBRARY
+                    </div>
+                </div>
+
+                <div class="project-name">
+                    Library Portal
+                </div>
+
+            </article>
+
+
+            <article class="project-card reveal"
+                     data-title="Renjith Bakes"
+                     data-description="A digital business presence designed for a bakery brand.">
+
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        BAKES
+                    </div>
+                </div>
+
+                <div class="project-name">
+                    Renjith Bakes
+                </div>
+
+            </article>
+
+
+            <article class="project-card reveal"
+                     data-title="Save the Date"
+                     data-description="A modern digital invitation and event experience.">
+
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        EVENT
+                    </div>
+                </div>
+
+                <div class="project-name">
+                    Save the Date
+                </div>
+
+            </article>
+
+
+            <article class="project-card reveal"
+                     data-title="Fida Clothing & Essentials"
+                     data-description="A digital experience for a clothing and essentials brand.">
+
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        FIDA
+                    </div>
+                </div>
+
+                <div class="project-name">
+                    Fida Clothing & Essentials
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUMES -->
+    <section class="section" id="resumes">
+
+        <div class="section-heading reveal">
+            <span>04 / RESUME MODELS</span>
+            <h2>Professional Resume Designs.</h2>
+        </div>
+
+        <div class="resume-grid">
+
+            <article class="resume-card reveal" data-resume="Resume 1">
+                <div class="resume-placeholder">
+                    <span>RESUME</span>
+                    <strong>01</strong>
+                </div>
+                <h3>Resume 01</h3>
+            </article>
+
+            <article class="resume-card reveal" data-resume="Resume 2">
+                <div class="resume-placeholder">
+                    <span>RESUME</span>
+                    <strong>02</strong>
+                </div>
+                <h3>Resume 02</h3>
+            </article>
+
+            <article class="resume-card reveal" data-resume="Resume 3">
+                <div class="resume-placeholder">
+                    <span>RESUME</span>
+                    <strong>03</strong>
+                </div>
+                <h3>Resume 03</h3>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER -->
+    <section class="section order-section" id="order">
+
+        <div class="section-heading reveal">
+            <span>05 / ORDER NOW</span>
+            <h2>Have an Idea?</h2>
+        </div>
+
+        <div class="order-box reveal">
+
+            <p>
+                Tell us what you want to build. Let's turn your idea
+                into a real digital solution.
+            </p>
+
+            <a href="#contact" class="btn primary">
+                Start Your Project
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+
+        <div class="section-heading reveal">
+            <span>06 / CONTACT</span>
+            <h2>Let's Create Something.</h2>
+        </div>
+
+        <div class="contact-box reveal">
+
+            <p>
+                Contact details will be added here.
+            </p>
+
+            <div class="contact-items">
+
+                <div>
+                    <span>Email</span>
+                    <strong>Your Email</strong>
+                </div>
+
+                <div>
+                    <span>Phone</span>
+                    <strong>Your Phone</strong>
+                </div>
+
+                <div>
+                    <span>Instagram</span>
+                    <strong>Your Instagram</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeProject">
+                ×
+            </button>
+
+            <div class="modal-glow"></div>
+
+            <span>PROJECT</span>
+
+            <h2 id="modalTitle">
+                Project
+            </h2>
+
+            <p id="modalDescription">
+                Project description.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESUME MODAL -->
+    <div class="modal" id="resumeModal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeResume">
+                ×
+            </button>
+
+            <span>RESUME MODEL</span>
+
+            <h2 id="resumeTitle">
+                Resume
+            </h2>
+
+            <div class="resume-preview">
+                Resume Preview
+            </div>
+
+        </div>
+
+    </div>
+<div class="contact-icons">
+
+    <a href="mailto:yourmail@gmail.com" class="contact-icon" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="tel:+919876543210" class="contact-icon" title="Call">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank" class="contact-icon" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/" target="_blank" class="contact-icon" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/" target="_blank" class="contact-icon" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://instagram.com/" target="_blank" class="contact-icon" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://maps.google.com/" target="_blank" class="contact-icon" title="Location">
+        <i class="fa-solid fa-location-dot"></i>
+    </a>
+
+</div>
+
+    <footer>
+
+        <div class="footer-logo">
+            CEFABEX
+        </div>
+
         <p>
-            © 2026 CEFABEX Innovations
+            © 2026 CEFABEX Innovations. All rights reserved.
         </p>
 
     </footer>
@@ -779,4 +513,4 @@
     <script src="script.js"></script>
 
 </body>
-  </html>
+</html>
