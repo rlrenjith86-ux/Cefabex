@@ -1008,3 +1008,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================
+   CAD DESIGN MODAL
+========================= */
+
+function openCAD(title, description, image) {
+
+    const modal = document.getElementById("cadModal");
+    const modalImage = document.getElementById("cadModalImage");
+    const modalTitle = document.getElementById("cadModalTitle");
+    const modalDescription = document.getElementById("cadModalDescription");
+
+    if (!modal) return;
+
+    modalImage.src = image;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeCAD() {
+
+    const modal = document.getElementById("cadModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* Close CAD modal when clicking outside */
+
+document.addEventListener("click", function(event) {
+
+    const modal = document.getElementById("cadModal");
+
+    if (event.target === modal) {
+        closeCAD();
+    }
+
+});
+
+
+/* ESC key */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeCAD();
+    }
+
+});
