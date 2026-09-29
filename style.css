@@ -2070,3 +2070,254 @@ footer {
     transform: scale(1.08);
     filter: drop-shadow(0 0 12px rgba(0, 140, 255, 0.8));
 }
+/* =========================
+   CAD DESIGN SECTION
+========================= */
+
+.cad-grid {
+    max-width: 1200px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.cad-card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(5, 18, 39, 0.75);
+
+    border: 1px solid rgba(67, 183, 255, 0.2);
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.cad-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #008cff;
+
+    box-shadow:
+        0 0 35px rgba(0, 140, 255, 0.25),
+        0 20px 70px rgba(0, 0, 0, 0.4);
+}
+
+.cad-image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: #020817;
+}
+
+.cad-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+
+.cad-card:hover .cad-image img {
+    transform: scale(1.06);
+}
+
+.cad-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 10, 25, 0.55);
+
+    opacity: 0;
+
+    transition: 0.3s ease;
+}
+
+.cad-card:hover .cad-overlay {
+    opacity: 1;
+}
+
+.cad-overlay span {
+    padding: 12px 22px;
+
+    border: 1px solid #43b7ff;
+    border-radius: 30px;
+
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    box-shadow: 0 0 20px rgba(0, 140, 255, 0.5);
+}
+
+.cad-info {
+    padding: 22px;
+}
+
+.cad-info > span {
+    color: #43b7ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.cad-info h3 {
+    margin: 8px 0;
+
+    color: #fff;
+
+    font-size: 22px;
+}
+
+.cad-info p {
+    margin: 0;
+
+    color: #91a1b8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CAD MODAL
+========================= */
+
+.cad-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(0, 5, 15, 0.88);
+
+    backdrop-filter: blur(12px);
+}
+
+.cad-modal.active {
+    display: flex;
+}
+
+.cad-modal-content {
+    position: relative;
+
+    width: min(900px, 95vw);
+
+    background: #061126;
+
+    border: 1px solid rgba(67, 183, 255, 0.35);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 60px rgba(0, 140, 255, 0.3);
+}
+
+.cad-modal-content > img {
+    width: 100%;
+
+    max-height: 65vh;
+
+    object-fit: contain;
+
+    display: block;
+
+    background: #020817;
+}
+
+.cad-modal-text {
+    padding: 25px;
+}
+
+.cad-modal-text span {
+    color: #43b7ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.cad-modal-text h2 {
+    margin: 8px 0;
+
+    color: #fff;
+}
+
+.cad-modal-text p {
+    color: #91a1b8;
+}
+
+.cad-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.6);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+.cad-close:hover {
+    background: #008cff;
+
+    box-shadow: 0 0 20px rgba(0,140,255,0.6);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .cad-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cad-info h3 {
+        font-size: 19px;
+    }
+
+}
