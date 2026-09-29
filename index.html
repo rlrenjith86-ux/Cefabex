@@ -700,7 +700,85 @@
 
 </section>
 
+<!-- CAD DESIGN SECTION -->
+<section id="cad" class="section">
+    <div class="section-heading reveal">
+        <span>CAD DESIGNING</span>
+        <h2>CAD Design <strong>Examples</strong></h2>
+        <p>Selected CAD models and engineering design examples.</p>
+    </div>
 
+    <div class="cad-grid">
+
+        <!-- CAD DESIGN 1 -->
+        <div class="cad-card reveal" onclick="openCAD(
+            'CAD Design 01',
+            'Engineering CAD model and mechanical component design.',
+            'images/cad-design-1.jpg'
+        )">
+
+            <div class="cad-image">
+                <img
+                    src="images/cad-design-1.jpg"
+                    alt="CAD Design 01"
+                >
+                <div class="cad-overlay">
+                    <span>VIEW DESIGN</span>
+                </div>
+            </div>
+
+            <div class="cad-info">
+                <span>CAD DESIGN 01</span>
+                <h3>Mechanical Design</h3>
+                <p>Engineering component and 3D CAD model.</p>
+            </div>
+        </div>
+
+
+        <!-- CAD DESIGN 2 -->
+        <div class="cad-card reveal" onclick="openCAD(
+            'CAD Design 02',
+            '3D CAD assembly and engineering design example.',
+            'images/cad-design-2.jpg'
+        )">
+
+            <div class="cad-image">
+                <img
+                    src="images/cad-design-2.jpg"
+                    alt="CAD Design 02"
+                >
+                <div class="cad-overlay">
+                    <span>VIEW DESIGN</span>
+                </div>
+            </div>
+
+            <div class="cad-info">
+                <span>CAD DESIGN 02</span>
+                <h3>3D CAD Assembly</h3>
+                <p>Detailed 3D modelling and assembly design.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CAD MODAL -->
+<div id="cadModal" class="cad-modal">
+    <div class="cad-modal-content">
+
+        <button class="cad-close" onclick="closeCAD()">×</button>
+
+        <img id="cadModalImage" src="" alt="CAD Design">
+
+        <div class="cad-modal-text">
+            <span>CAD DESIGN</span>
+            <h2 id="cadModalTitle"></h2>
+            <p id="cadModalDescription"></p>
+        </div>
+
+    </div>
+</div>
 <!-- =========================================================
      ORDER NOW
 ========================================================= -->
