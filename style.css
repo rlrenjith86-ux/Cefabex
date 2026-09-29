@@ -2321,3 +2321,11 @@ footer {
     }
 
 }
+
+.cad-info span {
+    font-size: 9px;
+
+    color: var(--blue-light);
+
+    letter-spacing: 2px;
+}
